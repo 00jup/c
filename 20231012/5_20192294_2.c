@@ -9,10 +9,8 @@ void main()
 
     int sum = 0;
     // 2로 나누고 나머지가 1이면,,
-    for (int i = 1; i <= N; i += 2)
-    {
+    for (int i = 1; i <= N; i += 1)
         sum += i;
-    }
 
     printf("1부터 %d까지의 홀수 합은 %d 입니다.\n", N, sum);
 }
