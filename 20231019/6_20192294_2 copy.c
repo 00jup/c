@@ -19,6 +19,7 @@ int calculator(int button)
     }
     printf("점수를 입력하시오: ");
     scanf("%lf", &num);
+    /// int가 아니라 double로 받아야 하는구나...
 
     switch (button)
     {
@@ -49,17 +50,15 @@ int main()
     printf("3. 탄젠트\n");
     printf("4. 제곱근\n");
     printf("5. 팩토리얼\n");
-    printf("6. 종료\n");
+    printf("6. 종료\n\n");
 
     int button;
     int result;
 
-    while (1)
-    {
-        printf("\n선택해주세요 : ");
-        scanf("%d", &button);
-        printf("\n");
-        if (calculator(button) == 0)
-            break;
-    }
+    printf("선택해주세요 : ");
+    scanf("%d", &button);
+    printf("\n");
+    calculator(button);
+
+    /// function
 }

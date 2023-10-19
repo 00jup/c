@@ -41,12 +41,14 @@ int main()
     {
         printf("메뉴에서 선택하세요: ");
         scanf("%s", &menu);
+        // conclusion =
         if (convert(menu) == 0.0)
         {
             printf("종료하겠습니다.\n");
             break;
         }
     }
+    // function
 
     return 0;
 }
