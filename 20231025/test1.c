@@ -9,11 +9,14 @@ int is_big(int x, int y)
 
 int main()
 {
-    int a, b, result;
-    scanf("%d %d", &a, &b);
+    // int a, b, result;
+    // scanf("%d %d", &a, &b);
 
-    result = is_big(a, b);
-    printf("%d", result);
+    // result = is_big(a, b);
+    // printf("%d", result);
+    float f;
+    f = 7 / 3;
+    printf("%f", f);
 
     return 0;
 }
