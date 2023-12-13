@@ -7,15 +7,15 @@ int main(void)
     double *pf;
     char *pc;
 
-    pi = (int *)malloc(sizeof(int));
+    pi = (int *)calloc(5, sizeof(int));
     pf = (double *)malloc(sizeof(double));
     pc = (char *)malloc(sizeof(char));
-    if (pf == NULL || pc == NULL || pi == NULL)
+    if (pc == NULL || pi == NULL || pf == NULL)
     {
         printf("dynamic allocation error\n");
         exit(1);
     }
-    *pi = 100;
+
     *pf = 3.14;
     *pc = 'a';
     printf("%d\n", *pi);

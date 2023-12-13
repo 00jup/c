@@ -22,7 +22,7 @@ int main()
     char *words[MAX_WORDS] = {
         "Apple", "orange", "banana", "grape", "kiwi"};
     int wordCount = strlen(*words);
-
+    printf("%s\n", *(words + 9));
     printf("Original Strings:\n");
     for (int i = 0; i < wordCount; i++)
     {
