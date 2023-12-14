@@ -30,7 +30,7 @@ int main()
         printf("영화 제목: ");
         scanf("%[^\n]s", movies[i].title);
         printf("영화 평점: ");
-        scanf("%lf", &movies[i].rating);
+        scanf("%lf", &movies->rating);
         while (getchar() != '\n')
             ;
         i++;

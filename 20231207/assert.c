@@ -13,7 +13,9 @@
 int main(void)
 {
     int sum = 100;
-    ASSERT(sum == 1);
+#define MAX 100
+    printf("%d", MAX);
 
+    ASSERT(sum == 1);
     return 0;
 }

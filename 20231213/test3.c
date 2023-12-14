@@ -11,9 +11,13 @@ int main()
 
     pc = Test2;
     pi = Test1;
-    printf("%d \n %s \n값 변경 : ", pi[1], pc);
-
-    scanf("%d %[^\n]s", pi, pc);
-    getchar();
-    printf("%d \n %s \n", *pi, pc);
+    printf("%d \n %s \n값 변경 : \n\n", pi[1], pc);
+    int count = 0;
+    // scanf("%d %[^\n]s", pi, pc);
+    // getchar();
+    for (int i = 0; Test1[i] == 0; i++, count++)
+    {
+        printf("%d ", Test1[i]);
+    }
+    printf("%d", count);
 }
